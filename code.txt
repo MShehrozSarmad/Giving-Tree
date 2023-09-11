@@ -1,0 +1,416 @@
+    <!-- Modal -->
+    <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- First Section - Logo Background -->
+                <div class="modal-header bg-primary text-white text-center"> <!-- Centered main heading -->
+                    <h5 class="modal-title" id="exampleModalLabel">Enter Your Donation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Logo Image -->
+                            <img src="your-logo-image-url" alt="Logo" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Second Section - Donation Form -->
+                            <div class="modal-form p-4">
+                                <!-- Heading styles adjusted for attractiveness -->
+                                <h3 class="text-primary">Select Your Account</h3> <!-- Heading styles adjusted -->
+                                <div class="form-check form-check-inline"> <!-- Radio buttons in a row -->
+                                    <input class="form-check-input" type="radio" name="accountType" id="easypaisa"
+                                        value="easypaisa" required>
+                                    <label class="form-check-label" for="easypaisa">EasyPaisa</label>
+                                </div>
+                                <div class="form-check form-check-inline"> <!-- Radio buttons in a row -->
+                                    <input class="form-check-input" type="radio" name="accountType" id="jazzcash"
+                                        value="jazzcash" required>
+                                    <label class="form-check-label" for="jazzcash">JazzCash</label>
+                                </div>
+                                <div class="form-check form-check-inline"> <!-- Radio buttons in a row -->
+                                    <input class="form-check-input" type="radio" name="accountType" id="bankAccount"
+                                        value="bankAccount" required>
+                                    <label class="form-check-label" for="bankAccount">Bank Account</label>
+                                </div>
+                                <!-- Heading styles adjusted for attractiveness -->
+                                <h3 class="text-primary">Select the Amount</h3> <!-- Heading styles adjusted -->
+                                <div class="form-check form-check-inline"> <!-- Radio buttons in a row -->
+                                    <input class="form-check-input" type="radio" name="amount" id="amount100"
+                                        value="100" required>
+                                    <label class="form-check-label" for="amount100">PKR 100</label>
+                                </div>
+                                <div class="form-check form-check-inline"> <!-- Radio buttons in a row -->
+                                    <input class="form-check-input" type="radio" name="amount" id="amount500"
+                                        value="500" required>
+                                    <label class="form-check-label" for="amount500">PKR 500</label>
+                                </div>
+                                <div class="form-check form-check-inline"> <!-- Radio buttons in a row -->
+                                    <input class="form-check-input" type="radio" name="amount" id="amount1000"
+                                        value="1000" required>
+                                    <label class="form-check-label" for="amount1000">PKR 1000</label>
+                                </div>
+                                <!-- Heading styles adjusted for attractiveness -->
+                                <h3 class="text-primary">Or Enter Other Amount</h3> <!-- Heading styles adjusted -->
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="otherAmount" name="otherAmount"
+                                        placeholder="Enter amount">
+                                </div>
+                                <!-- Heading styles adjusted for attractiveness -->
+                                <h3 class="text-primary">Attach Payment Screenshot</h3> <!-- Heading styles adjusted -->
+                                <div class="form-group">
+                                    <input type="file" class="form-control-file" id="paymentScreenshot"
+                                        name="paymentScreenshot" required>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Donate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                           
+
+
+
+
+
+
+
+
+
+
+
+
+before removing logo section
+<div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- First Section - Logo Background -->
+            <div class="modal-header bg-green text-white text-center" style="background-color: #3d9946;">
+                <h5 class="modal-title text-center" style="color: white;" id="exampleModalLabel">Enter Your Donation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="row">
+                    <div class="col-md-5" style="background-image: url('/assets/Green\ and\ Brown\ Minimalist\ Hands\ and\ Tree\ Alternative\ Medicine\ Logo\ .png'); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 0;">
+                        <!-- Logo Image -->
+                        <!-- <img src="assets/Green and Brown Minimalist Hands and Tree Alternative Medicine Logo .png" alt="Logo" class="img-fluid" style="width: 100%; object-fit: cover;"> -->
+                    </div>
+                    <div class="col-md-7" style="padding: 0;">
+                        <!-- Second Section - Donation Form -->
+                        <div class="modal-form p-4">
+                            <!-- Heading styles adjusted for attractiveness -->
+                            <h3 class="text-black" style="font-size: 1.2rem; display: block;" >Select Your Account</h3>
+                            <form>
+                                <!-- Account Type Selection -->
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="accountType" id="easypaisa"
+                                        value="easypaisa" required>
+                                    <label class="form-check-label" for="easypaisa">EasyPaisa</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="accountType" id="jazzcash"
+                                        value="jazzcash" required>
+                                    <label class="form-check-label" for="jazzcash">JazzCash</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="accountType" id="bankAccount"
+                                        value="bankAccount" required>
+                                    <label class="form-check-label" for="bankAccount">Bank Account</label>
+                                </div>
+
+                                <!-- Select Amount -->
+                                <h3 class="text-black" style="font-size: 1.2rem; display: block; margin-top: 1em;" >Select the Amount</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="amount" id="amount100"
+                                        value="100" required>
+                                    <label class="form-check-label" for="amount100">PKR 100</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="amount" id="amount500"
+                                        value="500" required>
+                                    <label class="form-check-label" for="amount500">PKR 500</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="amount" id="amount1000"
+                                        value="1000" required>
+                                    <label class="form-check-label" for="amount1000">PKR 1000</label>
+                                </div>
+
+                                <!-- Enter Other Amount -->
+                                <h3 class="text-black" style="font-size: 1.2rem; display: block; margin-top: 1em;" >Or Enter Other Amount</h3>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="otherAmount" name="otherAmount"
+                                        placeholder="Enter amount" style="display: block;">
+                                </div>
+
+                                <!-- Attach Payment Screenshot -->
+                                <h3 class="text-black" style="font-size: 1.2rem; display: block; margin-top: 1em;" >Attach Payment Screenshot</h3>
+                                <div class="form-group">
+                                    <input type="file" class="form-control-file" id="paymentScreenshot"
+                                        name="paymentScreenshot" required style="display: block;">
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="default-btn" style="display: block;">Donate</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+data-bs-toggle="modal" data-bs-target="#donationModal"
+
+
+
+
+
+
+
+
+
+
+
+<!-- Start Our Causes Area -->
+<section class="our-causes-area ptb-100">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-8">
+				<div class="section-title section-title-left">
+					<span class="top-title">OUR CAUSES</span>
+					<h2>You can help Us by Contributing in our Causes</h2>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="text-right">
+					<a href="/causes" class="default-btn">MORE CAUSES</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="causes-slider owl-carousel owl-theme">
+			
+			<div  class="single-causes style-two">
+				<div class="causes-img">
+					<a href="/cause/Education-Funds-For-Sindh/details">
+						
+                            <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png" alt="lifea-cases-banner">
+                            
+						<span class="tag">MONEY</span>
+					</a>
+				</div>
+
+				<div class="bar-1">
+					<h3>
+						<a href="/cause/Education-Funds-For-Sindh/details">
+							Education Funds For Sindh
+						</a>
+					</h3>
+					<p>It aims at providing help to promote an educated society in partnership with the...</p>
+
+                        <div class="bar" data-width="45%">
+                            <div class="bar-inner"></div>
+                            <div class="bar-percent">45%</div>
+                        </div>
+
+                        <ul class="total-donate">
+                            <li><span>Raised: </span>PKR 9000</li>
+                            <li class="goal"><span>Goal: </span>PKR 20000</li>
+                        </ul>
+
+					<ul class="donate-read">
+						<li>
+							<a href="/cause/Education-Funds-For-Sindh/details" class="default-btn">
+								DONATE NOW
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div  class="single-causes style-two">
+				<div class="causes-img">
+					<a href="/cause/Education-Funds-For-Needy-Students/details">
+						
+                            <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png" alt="lifea-cases-banner">
+                            
+						<span class="tag">FEES INSTALMENTS</span>
+					</a>
+				</div>
+
+				<div class="bar-1">
+					<h3>
+						<a href="/cause/Education-Funds-For-Needy-Students/details">
+							Education Funds For Needy Students
+						</a>
+					</h3>
+					<p>GivesToNeedyHand has initiated this project to eradicate the menace of child lab...</p>
+
+                        <div class="bar" data-width="52%">
+                            <div class="bar-inner"></div>
+                            <div class="bar-percent">52%</div>
+                        </div>
+
+                        <ul class="total-donate">
+                            <li><span>Raised: </span>PKR 21000</li>
+                            <li class="goal"><span>Goal: </span>PKR 40000</li>
+                        </ul>
+
+					<ul class="donate-read">
+						<li>
+							<a href="/cause/Education-Funds-For-Needy-Students/details" class="default-btn">
+								DONATE NOW
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div  class="single-causes style-two">
+				<div class="causes-img">
+					<a href="/cause/Flood-Relief/details">
+						
+                            <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png" alt="lifea-cases-banner">
+                            
+						<span class="tag">CARE KITS</span>
+					</a>
+				</div>
+
+				<div class="bar-1">
+					<h3>
+						<a href="/cause/Flood-Relief/details">
+							Flood Relief
+						</a>
+					</h3>
+					<p>Pakistan is currently facing devastating flooding due to the unprecedented rains...</p>
+
+                        <div class="bar" data-width="7%">
+                            <div class="bar-inner"></div>
+                            <div class="bar-percent">7%</div>
+                        </div>
+
+                        <ul class="total-donate">
+                            <li><span>Raised: </span>PKR 1500</li>
+                            <li class="goal"><span>Goal: </span>PKR 20000</li>
+                        </ul>
+
+					<ul class="donate-read">
+						<li>
+							<a href="/cause/Flood-Relief/details" class="default-btn">
+								DONATE NOW
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div  class="single-causes style-two">
+				<div class="causes-img">
+					<a href="/cause/Education-Funds/details">
+						
+                            <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png" alt="lifea-cases-banner">
+                            
+						<span class="tag">FEES INSTALMENTS</span>
+					</a>
+				</div>
+
+				<div class="bar-1">
+					<h3>
+						<a href="/cause/Education-Funds/details">
+							Education Funds
+						</a>
+					</h3>
+					<p>It aims at providing help to promote an educated society in partnership with the...</p>
+
+                        <div class="bar" data-width="50%">
+                            <div class="bar-inner"></div>
+                            <div class="bar-percent">50%</div>
+                        </div>
+
+                        <ul class="total-donate">
+                            <li><span>Raised: </span>PKR 5000</li>
+                            <li class="goal"><span>Goal: </span>PKR 10000</li>
+                        </ul>
+
+					<ul class="donate-read">
+						<li>
+							<a href="/cause/Education-Funds/details" class="default-btn">
+								DONATE NOW
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div  class="single-causes style-two">
+				<div class="causes-img">
+					<a href="/cause/Marriage-Funds/details">
+						
+                            <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png" alt="lifea-cases-banner">
+                            
+						<span class="tag">MARRIAGE FUNDS</span>
+					</a>
+				</div>
+
+				<div class="bar-1">
+					<h3>
+						<a href="/cause/Marriage-Funds/details">
+							Marriage Funds
+						</a>
+					</h3>
+					<p>
+Due to the rise in poverty in Pakistan, poor parents cannot afford to get thei...</p>
+
+                        <div class="bar" data-width="57%">
+                            <div class="bar-inner"></div>
+                            <div class="bar-percent">57%</div>
+                        </div>
+
+                        <ul class="total-donate">
+                            <li><span>Raised: </span>PKR 29000</li>
+                            <li class="goal"><span>Goal: </span>PKR 50000</li>
+                        </ul>
+
+					<ul class="donate-read">
+						<li>
+							<a href="/cause/Marriage-Funds/details" class="default-btn">
+								DONATE NOW
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+</section>
+<!-- End Our Causes Area -->

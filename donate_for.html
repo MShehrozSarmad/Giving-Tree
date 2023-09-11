@@ -51,9 +51,36 @@
     <title>Donate For | GIVING TREE</title>
 
     <style>
-        /* Add spacing between input fields */
-        .contact-form .form-group {
-            margin-bottom: 15px;
+        /* .fixed-category-switch {
+            position: fixed;
+            top: 20%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        .custom-control-label::before {
+            content: "←";
+            position: absolute;
+            left: -40px;
+            top: 2px;
+            font-size: 1.2rem;
+        }
+
+        .custom-control-input:checked~.custom-control-label::before {
+            content: "→";
+        } */
+        .row {
+            --bs-gutter-x: 0;
+        }
+
+        .custom-paragraph {
+            width: 70%;
+            padding: 20px;
+            /* Adjust the padding as needed for your desired look */
+            text-align: justify;
+            /* If you want justified text */
+            margin: 0 auto;
+            /* Center the paragraph horizontally */
         }
     </style>
 
@@ -116,7 +143,7 @@
                             <ul>
                                 <li>
 
-                                    <a href="/donate" class="default-btn">
+                                    <a class="default-btn" data-bs-toggle="modal" data-bs-target="#donationModal">
                                         DONATE NOW
                                     </a>
 
@@ -149,7 +176,7 @@
                                     </button>
                                 </li>
                                 <li>
-                                    <a href="donation.html" class="default-btn">
+                                    <a class="default-btn" data-bs-toggle="modal" data-bs-target="#donationModal">
                                         DONATE NOW
                                     </a>
                                 </li>
@@ -171,28 +198,519 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h2>Clear Navigation</h2>
-                    <p>Create a clear and prominent navigation menu on your donation page that allows donors to choose between "Human Welfare" and "Animal Welfare" or similar categories. Use descriptive labels so donors can easily understand their options.</p>
-                    <button class="btn btn-primary category-option" data-category="Human Welfare" data-bs-dismiss="modal">Human Welfare</button>
-                    <button class="btn btn-primary category-option" data-category="Animal Welfare" data-bs-dismiss="modal">Animal Welfare</button>
+                    <h2>Main Categories</h2>
+                    <p>When you choose your category for donation, remember that every act of kindness counts. Whether
+                        you support Animal Aid or Human Welfare, your contribution makes a meaningful impact. Select the
+                        cause that resonates with your heart, and together, let's create a world filled with compassion
+                        and care.</p>
+                    <button class="btn default-btn category-option" data-category="Human Welfare"
+                        data-bs-dismiss="modal">Human Welfare</button>
+                    <button class="btn default-btn category-option" data-category="Animal Welfare"
+                        data-bs-dismiss="modal">Animal Welfare</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- <div class="fixed-category-switch">
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="categorySwitch">
+            <label class="custom-control-label" for="categorySwitch">Change Category</label>
+        </div>
+    </div> -->
+
 
     <!-- Main Content Container -->
     <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <div id="impactInfo">
-                    <!-- Content for impact information will be displayed here based on category selection -->
-                </div>
+        <div id="impactInfo">
+            <!-- Content for impact information will be displayed here based on category selection -->
+            <div id="human" style="display: none;">
+                <h2 class="text-center">Human Welfare, Extending a Helping Hand for a Better Tomorrow</h2>
+
+                <p class="text-justify" style="padding: 20px; max-width: 87%; margin: 1em auto;">Human Welfare at its core is about 'A Circle of Care,' where we empower humanity
+                    with dignity. Our mission extends across various spheres of need, including education, food relief,
+                    disaster response, caring for orphans, and fostering unity through mass marriages. We strive to make
+                    a profound impact within the boundaries of Shariah, guided by the well-known hadith that proclaims,
+                    'The most beloved of people to Allah are those who are most beneficial to people,' and 'Whoever
+                    among you is able to benefit his brother, he should do so.' Through our initiatives, we aim to
+                    foster a world where individuals and groups have the tools they need to thrive, and where compassion
+                    and support are the cornerstones of our shared humanity.</p>
+                
+                <section class="our-causes-area ptb-100">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <div class="section-title section-title-left">
+                                    <span class="top-title">OUR CAUSES</span>
+                                    <h2>You can help Us by Contributing in our Causes</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="text-right">
+                                    <a href="/causes" class="default-btn">MORE CAUSES</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="causes-slider owl-carousel owl-theme">
+
+                            <div class="single-causes style-two">
+                                <div class="causes-img">
+                                    <a href="/cause/Education-Funds-For-Sindh/details">
+
+                                        <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png"
+                                            alt="lifea-cases-banner">
+
+                                        <span class="tag">MONEY</span>
+                                    </a>
+                                </div>
+
+                                <div class="bar-1">
+                                    <h3>
+                                        <a href="/cause/Education-Funds-For-Sindh/details">
+                                            Education Funds For Sindh
+                                        </a>
+                                    </h3>
+                                    <p>It aims at providing help to promote an educated society in partnership with
+                                        the...</p>
+
+                                    <div class="bar" data-width="45%">
+                                        <div class="bar-inner"></div>
+                                        <div class="bar-percent">45%</div>
+                                    </div>
+
+                                    <ul class="total-donate">
+                                        <li><span>Raised: </span>PKR 9000</li>
+                                        <li class="goal"><span>Goal: </span>PKR 20000</li>
+                                    </ul>
+
+                                    <ul class="donate-read">
+                                        <li>
+                                            <a class="default-btn" data-bs-toggle="modal"
+                                                data-bs-target="#donationModal">
+                                                DONATE NOW
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="single-causes style-two">
+                                <div class="causes-img">
+                                    <a href="/cause/Education-Funds-For-Needy-Students/details">
+
+                                        <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png"
+                                            alt="lifea-cases-banner">
+
+                                        <span class="tag">FEES INSTALMENTS</span>
+                                    </a>
+                                </div>
+
+                                <div class="bar-1">
+                                    <h3>
+                                        <a href="/cause/Education-Funds-For-Needy-Students/details">
+                                            Education Funds For Needy Students
+                                        </a>
+                                    </h3>
+                                    <p>GivesToNeedyHand has initiated this project to eradicate the menace of child
+                                        lab...</p>
+
+                                    <div class="bar" data-width="52%">
+                                        <div class="bar-inner"></div>
+                                        <div class="bar-percent">52%</div>
+                                    </div>
+
+                                    <ul class="total-donate">
+                                        <li><span>Raised: </span>PKR 21000</li>
+                                        <li class="goal"><span>Goal: </span>PKR 40000</li>
+                                    </ul>
+
+                                    <ul class="donate-read">
+                                        <li>
+                                            <a class="default-btn" data-bs-toggle="modal"
+                                                data-bs-target="#donationModal">
+                                                DONATE NOW
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="single-causes style-two">
+                                <div class="causes-img">
+                                    <a href="/cause/Flood-Relief/details">
+
+                                        <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png"
+                                            alt="lifea-cases-banner">
+
+                                        <span class="tag">CARE KITS</span>
+                                    </a>
+                                </div>
+
+                                <div class="bar-1">
+                                    <h3>
+                                        <a href="/cause/Flood-Relief/details">
+                                            Flood Relief
+                                        </a>
+                                    </h3>
+                                    <p>Pakistan is currently facing devastating flooding due to the unprecedented
+                                        rains...</p>
+
+                                    <div class="bar" data-width="7%">
+                                        <div class="bar-inner"></div>
+                                        <div class="bar-percent">7%</div>
+                                    </div>
+
+                                    <ul class="total-donate">
+                                        <li><span>Raised: </span>PKR 1500</li>
+                                        <li class="goal"><span>Goal: </span>PKR 20000</li>
+                                    </ul>
+
+                                    <ul class="donate-read">
+                                        <li>
+                                            <a class="default-btn" data-bs-toggle="modal"
+                                                data-bs-target="#donationModal">
+                                                DONATE NOW
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="single-causes style-two">
+                                <div class="causes-img">
+                                    <a href="/cause/Education-Funds/details">
+
+                                        <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png"
+                                            alt="lifea-cases-banner">
+
+                                        <span class="tag">FEES INSTALMENTS</span>
+                                    </a>
+                                </div>
+
+                                <div class="bar-1">
+                                    <h3>
+                                        <a href="/cause/Education-Funds/details">
+                                            Education Funds
+                                        </a>
+                                    </h3>
+                                    <p>It aims at providing help to promote an educated society in partnership with
+                                        the...</p>
+
+                                    <div class="bar" data-width="50%">
+                                        <div class="bar-inner"></div>
+                                        <div class="bar-percent">50%</div>
+                                    </div>
+
+                                    <ul class="total-donate">
+                                        <li><span>Raised: </span>PKR 5000</li>
+                                        <li class="goal"><span>Goal: </span>PKR 10000</li>
+                                    </ul>
+
+                                    <ul class="donate-read">
+                                        <li>
+                                            <a class="default-btn" data-bs-toggle="modal"
+                                                data-bs-target="#donationModal">
+                                                DONATE NOW
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="single-causes style-two">
+                                <div class="causes-img">
+                                    <a href="/cause/Marriage-Funds/details">
+
+                                        <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png"
+                                            alt="lifea-cases-banner">
+
+                                        <span class="tag">MARRIAGE FUNDS</span>
+                                    </a>
+                                </div>
+
+                                <div class="bar-1">
+                                    <h3>
+                                        <a href="/cause/Marriage-Funds/details">
+                                            Marriage Funds
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        Due to the rise in poverty in Pakistan, poor parents cannot afford to get
+                                        thei...</p>
+
+                                    <div class="bar" data-width="57%">
+                                        <div class="bar-inner"></div>
+                                        <div class="bar-percent">57%</div>
+                                    </div>
+
+                                    <ul class="total-donate">
+                                        <li><span>Raised: </span>PKR 29000</li>
+                                        <li class="goal"><span>Goal: </span>PKR 50000</li>
+                                    </ul>
+
+                                    <ul class="donate-read">
+                                        <li>
+                                            <a class="default-btn" data-bs-toggle="modal"
+                                                data-bs-target="#donationModal">
+                                                DONATE NOW
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="animal" style="display: none;">
+                <h2 class="text-center">Animal Aid, Nurturing Hope, One Paw at a Time</h2>
+                <p class="text-justify" style="padding: 20px; max-width: 87%; margin: 1em auto;">At Animal Aid, our mission transcends more than just providing care to our furry
+                    friends; it's about Saving Lives and Uplifting Spirits. We believe in a world where every animal, no
+                    matter how small or vulnerable, deserves compassion, protection, and a sense of belonging. Our
+                    dedicated team tirelessly rescues and rehabilitates animals in need, while also promoting
+                    responsible pet ownership and raising crucial awareness about animal welfare. We aspire to make a
+                    profound difference within the bounds of Shariah, inspired by the teachings of Islam that emphasize
+                    kindness to animals. As a well-known hadith states, 'Fear Allah in your treatment of animals.' Your
+                    support for Animal Aid ensures that every stray animal is treated with love, care, and kindness, as
+                    we work diligently to create a world where no animal is left behind.</p>
+                <section class="our-causes-area ptb-100">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <div class="section-title section-title-left">
+                                    <span class="top-title">OUR CAUSES</span>
+                                    <h2>You can help Us by Contributing in our Causes</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="text-right">
+                                    <a href="/causes" class="default-btn">MORE CAUSES</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="causes-slider owl-carousel owl-theme">
+
+                            <div class="single-causes style-two">
+                                <div class="causes-img">
+                                    <a href="/cause/Education-Funds-For-Sindh/details">
+
+                                        <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png"
+                                            alt="lifea-cases-banner">
+
+                                        <span class="tag">MONEY</span>
+                                    </a>
+                                </div>
+
+                                <div class="bar-1">
+                                    <h3>
+                                        <a href="/cause/Education-Funds-For-Sindh/details">
+                                            Education Funds For Sindh
+                                        </a>
+                                    </h3>
+                                    <p>It aims at providing help to promote an educated society in partnership with
+                                        the...</p>
+
+                                    <div class="bar" data-width="45%">
+                                        <div class="bar-inner"></div>
+                                        <div class="bar-percent">45%</div>
+                                    </div>
+
+                                    <ul class="total-donate">
+                                        <li><span>Raised: </span>PKR 9000</li>
+                                        <li class="goal"><span>Goal: </span>PKR 20000</li>
+                                    </ul>
+
+                                    <ul class="donate-read">
+                                        <li>
+                                            <a class="default-btn" data-bs-toggle="modal"
+                                                data-bs-target="#donationModal">
+                                                DONATE NOW
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="single-causes style-two">
+                                <div class="causes-img">
+                                    <a href="/cause/Education-Funds-For-Needy-Students/details">
+
+                                        <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png"
+                                            alt="lifea-cases-banner">
+
+                                        <span class="tag">FEES INSTALMENTS</span>
+                                    </a>
+                                </div>
+
+                                <div class="bar-1">
+                                    <h3>
+                                        <a href="/cause/Education-Funds-For-Needy-Students/details">
+                                            Education Funds For Needy Students
+                                        </a>
+                                    </h3>
+                                    <p>GivesToNeedyHand has initiated this project to eradicate the menace of child
+                                        lab...</p>
+
+                                    <div class="bar" data-width="52%">
+                                        <div class="bar-inner"></div>
+                                        <div class="bar-percent">52%</div>
+                                    </div>
+
+                                    <ul class="total-donate">
+                                        <li><span>Raised: </span>PKR 21000</li>
+                                        <li class="goal"><span>Goal: </span>PKR 40000</li>
+                                    </ul>
+
+                                    <ul class="donate-read">
+                                        <li>
+                                            <a class="default-btn" data-bs-toggle="modal"
+                                                data-bs-target="#donationModal">
+                                                DONATE NOW
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="single-causes style-two">
+                                <div class="causes-img">
+                                    <a href="/cause/Flood-Relief/details">
+
+                                        <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png"
+                                            alt="lifea-cases-banner">
+
+                                        <span class="tag">CARE KITS</span>
+                                    </a>
+                                </div>
+
+                                <div class="bar-1">
+                                    <h3>
+                                        <a href="/cause/Flood-Relief/details">
+                                            Flood Relief
+                                        </a>
+                                    </h3>
+                                    <p>Pakistan is currently facing devastating flooding due to the unprecedented
+                                        rains...</p>
+
+                                    <div class="bar" data-width="7%">
+                                        <div class="bar-inner"></div>
+                                        <div class="bar-percent">7%</div>
+                                    </div>
+
+                                    <ul class="total-donate">
+                                        <li><span>Raised: </span>PKR 1500</li>
+                                        <li class="goal"><span>Goal: </span>PKR 20000</li>
+                                    </ul>
+
+                                    <ul class="donate-read">
+                                        <li>
+                                            <a class="default-btn" data-bs-toggle="modal"
+                                                data-bs-target="#donationModal">
+                                                DONATE NOW
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="single-causes style-two">
+                                <div class="causes-img">
+                                    <a href="/cause/Education-Funds/details">
+
+                                        <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png"
+                                            alt="lifea-cases-banner">
+
+                                        <span class="tag">FEES INSTALMENTS</span>
+                                    </a>
+                                </div>
+
+                                <div class="bar-1">
+                                    <h3>
+                                        <a href="/cause/Education-Funds/details">
+                                            Education Funds
+                                        </a>
+                                    </h3>
+                                    <p>It aims at providing help to promote an educated society in partnership with
+                                        the...</p>
+
+                                    <div class="bar" data-width="50%">
+                                        <div class="bar-inner"></div>
+                                        <div class="bar-percent">50%</div>
+                                    </div>
+
+                                    <ul class="total-donate">
+                                        <li><span>Raised: </span>PKR 5000</li>
+                                        <li class="goal"><span>Goal: </span>PKR 10000</li>
+                                    </ul>
+
+                                    <ul class="donate-read">
+                                        <li>
+                                            <a class="default-btn" data-bs-toggle="modal"
+                                                data-bs-target="#donationModal">
+                                                DONATE NOW
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="single-causes style-two">
+                                <div class="causes-img">
+                                    <a href="/cause/Marriage-Funds/details">
+
+                                        <img src="https://lifea.s3.eu-north-1.amazonaws.com/images/cause-banner.png"
+                                            alt="lifea-cases-banner">
+
+                                        <span class="tag">MARRIAGE FUNDS</span>
+                                    </a>
+                                </div>
+
+                                <div class="bar-1">
+                                    <h3>
+                                        <a href="/cause/Marriage-Funds/details">
+                                            Marriage Funds
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        Due to the rise in poverty in Pakistan, poor parents cannot afford to get
+                                        thei...</p>
+
+                                    <div class="bar" data-width="57%">
+                                        <div class="bar-inner"></div>
+                                        <div class="bar-percent">57%</div>
+                                    </div>
+
+                                    <ul class="total-donate">
+                                        <li><span>Raised: </span>PKR 29000</li>
+                                        <li class="goal"><span>Goal: </span>PKR 50000</li>
+                                    </ul>
+
+                                    <ul class="donate-read">
+                                        <li>
+                                            <a class="default-btn" data-bs-toggle="modal"
+                                                data-bs-target="#donationModal">
+                                                DONATE NOW
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
-
-    <!-- Include Bootstrap JS and other dependencies -->
-    <!-- ... Include Bootstrap and other JS scripts ... -->
 
     <script>
         // Handle category selection when clicked from the main section
@@ -205,26 +723,127 @@
 
         // Function to display impact information based on the selected category
         function displayImpactInformation(category) {
-            var impactInfo = document.getElementById('impactInfo');
-            var content = '';
+            let human = document.getElementById('human'),
+                animal = document.getElementById('animal');
 
             if (category === 'Human Welfare') {
-                content = '<h2>Impact Information for Human Welfare</h2><p>Details about Human Welfare projects and donation options.</p>';
+                human.style.display = 'block';
+                animal.style.display = 'none';
             } else if (category === 'Animal Welfare') {
-                content = '<h2>Impact Information for Animal Welfare</h2><p>Details about Animal Welfare projects and donation options.</p>';
+                animal.style.display = 'block';
+                human.style.display = 'none';
+            } else {
+                human.style.display = 'block';
             }
-
-            impactInfo.innerHTML = content;
         }
 
         // Show the category selection modal on page load
         document.addEventListener('DOMContentLoaded', function () {
             var categoryModal = new bootstrap.Modal(document.getElementById('categoryModal'));
             categoryModal.show();
+            displayImpactInformation('Human Welfare');
+        });
+
+        document.getElementById('categorySwitch').addEventListener('change', function () {
+            var category = this.checked ? 'Animal Welfare' : 'Human Welfare';
+            displayImpactInformation(category);
         });
     </script>
 
-    
+
+    <!-- Modal -->
+    <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- First Section - Logo Background -->
+                <div class="modal-header bg-green text-white text-center" style="background-color: #3d9946;">
+                    <h5 class="modal-title text-center" style="color: white;" id="exampleModalLabel">Enter Your Donation
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="row">
+                        <div class="col-md-5"
+                            style="background-image: url('/assets/logo2.png'); background-repeat: no-repeat; background-position: center; background-size: contain;">
+                            <!-- Logo Image -->
+                            <!-- <img src="assets/Green and Brown Minimalist Hands and Tree Alternative Medicine Logo .png" alt="Logo" class="img-fluid" style="width: 100%; object-fit: cover;"> -->
+                        </div>
+                        <div class="col-md-7" style="padding: 0;">
+                            <!-- Second Section - Donation Form -->
+                            <div class="modal-form p-4">
+                                <!-- Heading styles adjusted for attractiveness -->
+                                <h3 class="text-black" style="font-size: 1.2rem; display: block;">Select Your Account
+                                </h3>
+                                <form>
+                                    <!-- Account Type Selection -->
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="accountType" id="easypaisa"
+                                            value="easypaisa" required>
+                                        <label class="form-check-label" for="easypaisa">EasyPaisa</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="accountType" id="jazzcash"
+                                            value="jazzcash" required>
+                                        <label class="form-check-label" for="jazzcash">JazzCash</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="accountType" id="bankAccount"
+                                            value="bankAccount" required>
+                                        <label class="form-check-label" for="bankAccount">Bank Account</label>
+                                    </div>
+
+                                    <!-- Select Amount -->
+                                    <h3 class="text-black" style="font-size: 1.2rem; display: block; margin-top: 1em;">
+                                        Select the Amount</h3>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="amount" id="amount100"
+                                            value="100">
+                                        <label class="form-check-label" for="amount100">PKR 100</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="amount" id="amount500"
+                                            value="500">
+                                        <label class="form-check-label" for="amount500">PKR 500</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="amount" id="amount1000"
+                                            value="1000">
+                                        <label class="form-check-label" for="amount1000">PKR 1000</label>
+                                    </div>
+
+                                    <!-- Enter Other Amount -->
+                                    <h3 class="text-black" style="font-size: 1.2rem; display: block; margin-top: 1em;">
+                                        Or Enter Other Amount</h3>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="otherAmount" name="otherAmount"
+                                            placeholder="Enter amount" style="display: block;" required>
+                                    </div>
+
+                                    <!-- Attach Payment Screenshot -->
+                                    <h3 class="text-black" style="font-size: 1.2rem; display: block; margin-top: 1em;">
+                                        Attach Payment Screenshot</h3>
+                                    <div class="form-group">
+                                        <input type="file" class="form-control-file" id="paymentScreenshot"
+                                            name="paymentScreenshot" required style="display: block;">
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="text-center mt-4">
+                                        <button type="submit" class="default-btn"
+                                            style="display: block;">Donate</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <!-- footer -->
     <footer class="footer-area bg-f9fafb pt-100 pb-70">
         <div class="container">
